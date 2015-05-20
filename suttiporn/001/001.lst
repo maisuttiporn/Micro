@@ -1,0 +1,7 @@
+                        ; This is a Systronix generated Main file
+                        ;  Put your include statements in this file      
+   0000                 	ORG	0000H
+   0000   79 28         	MOV	R1,#28H
+   0002   75 28 22      	MOV	28H,#22H
+   0005   aa 28         	MOV	R2,28H
+   0000                 	END

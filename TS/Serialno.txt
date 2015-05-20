@@ -1,0 +1,31 @@
+Saltine [TVM/KC] presents...
+
+Name............: TS Controls Emulator 8051 v1.01 (Serial#)
+
+Info............: http://www.tscontrols.com/
+
+Download........: http://www.tscontrols.com/software/TSCE0101.EXE
+
+Crack Notes.....: Select Help -> Register from the menu, then enter this:
+
+                  Name: License7 User
+                   Key: 19980001
+
+                  ...or simply drop the provided emul8051.reg file in
+                  the program directory.
+
+                  Yes, that DOES say License7.
+
+Other Notes.....: My cracks are PGP signed (note the .sig file). To
+                  verify the file came from me and has not been tampered
+                  with, issue this command (as applies to PGP 2.6.x):
+
+                  PGP crack.sig crack.com 
+
+                  You should get a message stating that it is a good
+                  signature from me. Of course, you will need my public
+                  key, which is available on the MIT keyserver.
+
+
+Saltine [TVM/KC]
+11/27/98

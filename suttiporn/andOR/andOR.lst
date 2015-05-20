@@ -1,0 +1,37 @@
+                        
+   0000                 	ORG 00H
+   0000   74 b9         	MOV A,#10111001B
+   0002   54 2a         	ANL	A,#2AH   
+   0004   f8            	MOV R0,A
+                        	
+   0005   74 b9         	MOV A,#10111001B
+   0007   75 20 2a      	MOV 20H,#2AH
+   000a   55 20         	ANL A,20H
+   000c   f9            	MOV R1,A
+                        	
+   000d   74 b9         	MOV A,#10111001B
+   000f   7f 2a         	MOV R7,#2AH
+   0011   55 20         	ANL A,20H
+   0013   fa            	MOV R2,A
+                            ;OR
+   0014   74 3d         	MOV A,#3DH
+   0016   44 98         	ORL	A,#98H   
+   0018   fb            	MOV R3,A
+                           
+   0019   74 3d             MOV A,#3DH
+   001b   75 20 98      	MOV 20H,#98H
+   001e   45 20         	ORL A,20H
+   0020   fc            	MOV R4,A 
+                        	
+   0021   74 3d         	MOV A,#3DH
+   0023   7f 98         	MOV R7,#98H
+   0025   45 20         	ORL A,20H
+   0027   fd            	MOV R5,A
+                        
+                         
+                            
+                        	
+                        	
+                        	
+                        	
+   0000                 	END

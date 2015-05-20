@@ -1,0 +1,28 @@
+                        ; This is a Systronix generated Main file
+                        ;  Put your include statements in this file     
+                        
+   0000                 	ORG 00H 
+   0000   7d 0a         LL:	MOV R5,#10D
+   0002   78 05         	MOV R0,#05H  
+                        	
+   0004   11 10         	ACALL L0
+   0006   75 90 f0      	MOV P1,#0F0H
+   0009   11 10         	ACALL L0 
+   000b   75 90 0f      	MOV P1,#0FH
+                        
+                        
+   000e   01 00         	AJMP LL
+   0010   78 05         L0:	MOV R0,#05H 
+   0012   11 17         L1: ACALL DELAY 	
+   0014   d8 fc         	DJNZ R0,L1 	
+   0016   22            	RET    
+                        	
+   0017   7e cd         DELAY: 	MOV R6,#205D
+   0019   7f f0         		MOV R7,#240D
+   001b   de fe         LABEL1: DJNZ R6,LABEL1
+   001d   df fe         LABEL2: DJNZ R7,LABEL2 
+   001f   dd f6         LABEL3: DJNZ R5,DELAY
+   0021   22            	RET 
+   0000                 END: END
+001d  LABEL2    0000  LL        001f  LABEL3    0010  L0        0012  L1        0022  END       
+0017  DELAY     001b  LABEL1    

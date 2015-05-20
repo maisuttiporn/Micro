@@ -1,0 +1,73 @@
+                        ; This is a Systronix generated Main file
+                        ;  Put your include statements in this file        
+                        
+   0000                 	ORG 0H
+   0000   75 01 0a      	MOV 01H,#0AH
+   0003   75 02 bc      	MOV 02H,#0BCH
+                        	
+   0006   75 12 aa      	MOV 12H,#0AAH 
+                        	
+   0009   e5 02         	MOV A,02H
+   000b   85 12 f0      	MOV B,12H
+   000e   a4            	MUL AB
+   000f   f5 62         	MOV 62H,A
+   0011   85 f0 61      	MOV 61H,B
+                        	
+   0014   e5 01         	MOV A,01H
+   0016   85 12 f0      	MOV B,12H
+   0019   a4            	MUL AB
+   001a   f5 51         	MOV 51H,A
+   001c   85 f0 50      	MOV 50H,B    
+                        	
+   001f   75 70 03      	MOV 70H,#03H
+   0022   78 52         	MOV R0,#52H
+   0024   79 62         	MOV R1,#62H
+                        	
+   0026   74 00         	MOV A,#00H
+   0028   24 00         	ADD A,#00H
+   002a                 LOOP:
+   002a   e6            	MOV A,@R0
+   002b   37            	ADDC A,@R1
+   002c   f5 77         	MOV 77H,A
+   002e   c0 77         	PUSH 77H
+   0030   18            	DEC R0
+   0031   19            	DEC R1
+   0032   d5 70 f5      	DJNZ 70H,LOOP
+                            
+   0035   78 30             MOV R0,#30H
+   0037   75 70 04          MOV 70H,#04H
+   003a                 LOOP2:
+   003a   d0 77         	POP 77H
+   003c   a6 77         	MOV @R0,77H
+   003e   08            	INC R0
+   003f   d5 70 f8      	DJNZ 70H,LOOP2
+                        	
+                        	   
+                            
+                            
+                            
+                            
+                        
+                        
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        		
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+002a  LOOP      003a  LOOP2     

@@ -1,0 +1,13 @@
+                        ; This is a Systronix generated Main file
+                        ;  Put your include statements in this file  
+   0000   75 89 01      	MOV TMOD, #01H
+   0003   7a 14         	MOV R2, #20
+   0005   75 8c 3c      LOOP: MOV TH0, #HIGH (-50000)
+   0008   75 8a b0      	MOV TL0, #LOW (-50000)
+   000b   d2 8c         	SETB TR0
+   000d   30 8d fd      	JNB TF0, $
+   0010   c2 8d         	CLR TF0
+   0012   c2 8c         	CLR TR0
+   0014   da ef         	DJNZ R2, LOOP
+   0016   22            	RET
+0005  LOOP      
